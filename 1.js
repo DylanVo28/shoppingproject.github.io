@@ -1,37 +1,61 @@
 ﻿ $(function(){
- 	var vitri=$("header .logo .row .bg-faded li:nth-child(1)").position().left+430-25 +"px";
- 	var chieudai=$("header .logo .row .bg-faded li:nth-child(1)").width()-18.059 + "px";
- 	// console.log($("body").width()+"px");
- 	// console.log(vitri);
-
- 	$("header .logo .row .bg-faded .themove").css({
+ 	var vitri=$("header .menutop .menu .navbar ul li:nth-child(2)").position().left+"px";
+ 	var kt=true;
+ 	var chieurong;
+ 	$("header .menutop .menu .navbar ul .themove").css({
  			"left": vitri,
- 			"width": chieudai,
- 		});
-
- 	$("header .logo .row .bg-faded li").hover(function() {
- 		vitri=$(this).position().left+430-25 +"px";
- 		chieudai=$(this).width() + "px";
- 		$("header .logo .row .bg-faded .themove").css({
- 			"left": vitri,
- 			"width": chieudai,
- 		});
- 		$("header .logo .row .bg-faded li a").removeClass('fonttrang');
- 		$(this).find('a').addClass('fonttrang');
- 	}, function() {
- 		$("header .logo .row .bg-faded .themove").css({
- 			"left": "421px",
- 			"width": "105px",
- 		});
-
- 		$("header .logo .row .bg-faded li a").removeClass('fonttrang');
- 		$("header .logo .row .bg-faded li:nth-child(1) a").addClass('fonttrang');
+ 			"width": "117.86px",
  	});
- 	$(window).scroll(function(event) {
- 		$("header .logo .row .bg-faded .themove").css({
- 			"top": 171-$(window).scrollTop() +"px",
- 			
+ 	$("header .menutop .menu .navbar ul li:nth-child(2) a").css({
+ 		"color": 'white',
+ 	
+ 	});
+ 	$("header .menutop .menu .navbar ul li").hover(function() {
+ 		vitri=$(this).position().left+"px";
+ 		chieurong=$(this).width()+"px";
+ 		$("header .menutop .menu .navbar ul .themove").css({
+ 			"left": vitri,
+ 			"width": chieurong,
  		});
+ 		$("header .menutop .menu .navbar ul li:nth-child(2) a").css({
+ 		"color": 'black',
+ 	
+ 		});
+ 		$(this).find('a').css({
+ 			"color": 'white',
+ 		
+ 		});
+ 	}, function() {
+ 		$("header .menutop .menu .navbar ul .themove").css({
+ 			"left": $("header .menutop .menu .navbar ul li:nth-child(2)").position().left+"px",
+ 			"width": $("header .menutop .menu .navbar ul li:nth-child(2)").width()+"px",
+ 		});
+ 		$(this).find('a').css({
+ 			"color": 'black',
+ 		
+ 		});
+ 		$("header .menutop .menu .navbar ul li:nth-child(2) a").css({
+ 		"color": 'white',
+ 	
+ 		});
+ 	});
+ 	
+ 	$("header .menutop .menu .navbar button").click(function(event) {
+ 		if(kt==true){
+ 			$(this).css({
+ 			"color": 'white',
+ 			
+ 			});
+ 			kt=false;
+ 		}
+ 		else{
+ 			$(this).css({
+ 			"color": 'black',
+ 			
+ 			});
+ 			kt=true;
+ 		}
+ 		
  	});
 })  
  
