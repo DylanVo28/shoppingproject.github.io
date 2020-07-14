@@ -57,5 +57,18 @@
  		}
  		
  	});
+ 	$("header .thanhden ul li:nth-child(1) a").click(function(event) {
+ 		$(".signin").css({
+ 			"opacity": '1',
+ 			"visibility": 'visible'
+ 		});
+ 	});
+ 	$(".signin i").click(function(event) {
+ 		$(".signin").css({
+ 			"opacity": '0',
+ 			"visibility": 'hidden'
+ 		});
+ 	});
+ 	
 })  
  

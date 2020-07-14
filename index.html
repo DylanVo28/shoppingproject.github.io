@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-	<title> Example </title>
+	<title> TAZAS - HOME </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">  
 	<script type="text/javascript" src="vendor/bootstrap.js"></script>
@@ -13,11 +13,40 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body >
+	<div class="signin">
+		<i class="far fa-times"></i>
+		<div class="row">
+			<div class="col-sm-4 anh">
+				<img src="images/anhsignin.jpg"  alt="">
+			</div>
+			<div class="col-sm-8 text text-xs-center">
+				<h1 class="display-4">Logo</h1>
+				<form>
+				  <div class="form-group">
+				   <!--  <label for="exampleInputEmail1">Tên đăng nhập</label> -->
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tên đăng nhập">
+				    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				  </div>
+				  <div class="form-group">
+				    <!-- <label for="exampleInputPassword1">Mật khẩu</label> -->
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
+				  </div>
+				  <div class="form-group form-check">
+				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+				  </div>
+				  <button type="submit" class="btn btn-outline-secondary">Login</button>
+				</form>
+				<p class="float-xs-left">Nếu bạn chưa có tài khoản <a href="">nhấn vào đây</a></p>
+				<a class="float-xs-right" href="">Quên mật khẩu</a>
+			</div>
+		</div>
+	</div>
 	<header>
 		<div class="thanhden">
 			<div class="container">
 			<ul>
-				<li><a href="">Sign In</a></li>
+				<li><a href="#">Sign In</a></li>
 				<li><a href="">Contact us</a></li>
 				<li><a href="">Faq</a></li>
 			</ul>
@@ -190,6 +219,6 @@
 			</div>
 		</div>
 	</section>
-	<div class="about">about</div>
+	<footer class="about">about</footer>
 </body>
 </html>
