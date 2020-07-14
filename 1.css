@@ -89,7 +89,7 @@
     width: 100vw;
     height: 100vh;
     background: #ffffffab;
-    z-index: 30;
+    /* z-index: 30; */
     opacity: 0;
     visibility: hidden;
     transition: 0.4s;
@@ -152,13 +152,46 @@ section.quanaonu .row {
 }
 
 section.quanaonam .text a, section.quanaonu .text a,section.quanaotreem .text a {
-    border-color: black;
+    /* border-color: black; */
     color: black;
     border-radius: 0px;
     /* padding-top: 13px; */
+    border: none;
     /* margin-top: 71px; */
+    position: relative;
     margin: auto;
     text-transform: uppercase;
+    transition: 0.8s;
+}
+
+section.quanaonam .text a:before, section.quanaonu .text a:before, section.quanaotreem .text a:before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    left: 0;
+    top: 0;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    transition: 0.4s;
+}
+
+section.quanaonam .text a:hover:before, section.quanaonu .text a:hover:before, section.quanaotreem .text a:hover:before,section.quanaonam .text a:hover:after, section.quanaonu .text a:hover:after, section.quanaotreem .text a:hover:after {
+    width: 100%;
+    height: 100%;
+}
+
+section.quanaonam .text a:hover:after, section.quanaonu .text a:hover:after, section.quanaotreem .text a:hover:after {}
+
+section.quanaonam .text a:after, section.quanaonu .text a:after, section.quanaotreem .text a:after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    right: 0;
+    bottom: 0;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
     transition: 0.4s;
 }
 

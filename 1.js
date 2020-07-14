@@ -60,18 +60,22 @@
  	$("header .thanhden ul li:nth-child(1) a").click(function(event) {
  		$(".signin").css({
  			"opacity": '1',
- 			"visibility": 'visible'
+ 			"visibility": 'visible',
+ 			"z-index":"30",
  		});
  	});
  	$(".signin i").click(function(event) {
  		$(".signin").css({
  			"opacity": '0',
- 			"visibility": 'hidden'
+ 			"visibility": 'hidden',
+ 			"z-index":"0",
  		});
  	});
  	$(".signin .row .text a.formdangky").click(function(event) {
  		$(".signin .row .text .dangnhap").animate({
  			left: "-50%",
+ 			opacity: "0",
+ 			visibility :"visible",
  			},
  			400, function() {
  			
@@ -92,6 +96,8 @@
  	$(".signin .row .text a.formdangnhap").click(function(event) {
  		$(".signin .row .text .dangky").animate({
  			left: "-50%",
+ 			opacity: "0",
+ 			visibility :"visible",
  			},
  			400, function() {
  			
