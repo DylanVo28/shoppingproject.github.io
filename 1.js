@@ -69,6 +69,45 @@
  			"visibility": 'hidden'
  		});
  	});
- 	
+ 	$(".signin .row .text a.formdangky").click(function(event) {
+ 		$(".signin .row .text .dangnhap").animate({
+ 			left: "-50%",
+ 			},
+ 			400, function() {
+ 			
+ 		});
+ 		$(".signin .row .text .dangky").css({
+ 			"left": '100%',
+ 			"opacity":"1",
+ 			"visibility":"visible",
+ 		});
+ 		$(".signin .row .text .dangky").animate({
+ 			left: "50%",
+ 			},
+ 			400, function() {
+ 			
+ 		});
+
+ 	});
+ 	$(".signin .row .text a.formdangnhap").click(function(event) {
+ 		$(".signin .row .text .dangky").animate({
+ 			left: "-50%",
+ 			},
+ 			400, function() {
+ 			
+ 		});
+ 		$(".signin .row .text .dangnhap").css({
+ 			"left": '100%',
+ 			"opacity":"1",
+ 			"visibility":"visible",
+ 		});
+ 		$(".signin .row .text .dangnhap").animate({
+ 			left: "50%",
+ 			},
+ 			400, function() {
+ 			
+ 		});
+
+ 	});
 })  
  

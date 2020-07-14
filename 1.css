@@ -2,6 +2,33 @@
 
 .signin .row .text {
     background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.signin .row .text .dangnhap,.signin .row .text .dangky {
+    position: absolute;
+    left: 50%;
+    margin-left: -20vw;
+    width: 40vw;
+    /* min-width: 400px; */
+    opacity: 0;
+    visibility: hidden;
+}
+
+.signin .row .text .dangnhap {
+    opacity: 1;
+    visibility: visible;
+}
+
+.signin .row .text .dangky {
+    /* opacity: 1; */
+    /* visibility: visible; */
+}
+
+.signin .row .text .dangky {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .signin .row .text form {
@@ -23,17 +50,19 @@
 }
 
 .signin .row .text h1 {
-    padding-top: calc(40vh - 150px);
+    padding-top: calc(35vh - 160px);
+    margin-bottom: 30px;
 }
 
 .signin .row .text .form-control {
-    width: 30%;
+    width: 40%;
     border-color: white;
     text-align: center;
     margin: auto;
     border-radius: 17px;
     transition: 0.4s;
     box-shadow: 4px 7px 11px #c5c5c5;
+    min-width: 120px;
 }
 
 .signin .row .text .form-check-input {
@@ -46,8 +75,9 @@
 }
 
 .signin .row .text .form-control:focus {
-    width: 50%;
+    width: 60%;
     border-color: white;
+    min-width: 200px;
 }
 
 .signin .row .text a {
@@ -500,6 +530,21 @@ section.quanaonam, section.quanaonu,section.quanaotreem {
 }
 @media (max-width: 575px){
 	*{}
+
+.signin .row .text h1 {
+    padding-top: calc(30vh - 160px);
+}
+
+.signin .row .text .dangnhap,.signin .row .text .dangky {
+    min-width: 307px;
+    margin-left: -154px;
+}
+
+.signin .row .text .form-control:focus {
+    /* padding-right: 27px; */
+    /* width: 200px; */
+    /* margin-right: 27px; */
+}
 
 .signin .row {
     flex-direction: column;
