@@ -10,6 +10,42 @@
  	
  	$(window).scroll(function(event) {
 		console.log($(window).scrollTop());
+		if($(window).scrollTop()==0){
+			donam=false;
+			donu=false;
+			dotreem=false;
+			$("section.quanaonam .anh div#carousel-example-generic").css({
+				"opacity": '0',
+			});
+			$("section.quanaonu .anh div#carousel-example-generic").css({
+				"opacity": '0',
+			});
+			$("section.quanaotreem .anh div#carousel-example-generic").css({
+				"opacity": '0',
+			});
+			$("section.quanaonam .text h1").css({
+ 					"opacity": '0',
+ 					
+ 			});
+ 			$("section.quanaonam .text a").css({
+ 				"opacity": '0',
+ 			});
+ 			$("section.quanaonu .text h1").css({
+ 					"opacity": '0',
+ 					
+ 			});
+ 			$("section.quanaonu .text a").css({
+ 				"opacity": '0',
+ 			});
+ 			$("section.quanaotreem .text h1").css({
+ 					"opacity": '0',
+ 					
+ 			});
+ 			$("section.quanaotreem .text a").css({
+ 				"opacity": '0',
+ 			});
+ 			
+		}
  		if($(window).scrollTop()>270){
  			
  			if(donam==false){
@@ -22,7 +58,7 @@
  					
  				});
  				gsap.from("section.quanaonam .text h1",1,{x:300,opacity:0})
- 				gsap.from("section.quanaonam .text a",1,{x:300,opacity:0})
+ 				gsap.from("section.quanaonam .text a",0.6,{x:300,opacity:0})
  				gsap.to("section.quanaonam .anh div#carousel-example-generic",1,{opacity:1})
  				donam=true;
  			}
@@ -39,7 +75,7 @@
  					"opacity": '1',
  				});
 				gsap.from("section.quanaonu .text h1",1,{x:-300,opacity:0})
- 				gsap.from("section.quanaonu .text a",1,{x:-300,opacity:0})
+ 				gsap.from("section.quanaonu .text a",0.6,{x:-300,opacity:0})
  				gsap.to("section.quanaonu .anh div#carousel-example-generic",1,{opacity:1})
  				donu=true;
 			}
@@ -54,7 +90,7 @@
  					"opacity": '1',
  				});
 				gsap.from("section.quanaotreem .text h1",1,{x:300,opacity:0})
- 				gsap.from("section.quanaotreem .text a",1,{x:300,opacity:0})
+ 				gsap.from("section.quanaotreem .text a",0.6,{x:300,opacity:0})
  				gsap.to("section.quanaotreem .anh div#carousel-example-generic",1,{opacity:1})
  				dotreem=true;
 			}
