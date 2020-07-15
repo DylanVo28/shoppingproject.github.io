@@ -13,6 +13,14 @@
  		if($(window).scrollTop()>270){
  			
  			if(donam==false){
+ 				$("section.quanaonam .text h1").css({
+ 					"opacity": '1',
+ 					
+ 				});
+ 				$("section.quanaonam .text a").css({
+ 					"opacity": '1',
+ 					
+ 				});
  				gsap.from("section.quanaonam .text h1",1,{x:300,opacity:0})
  				gsap.from("section.quanaonam .text a",1,{x:300,opacity:0})
  				gsap.to("section.quanaonam .anh div#carousel-example-generic",1,{opacity:1})
@@ -23,6 +31,13 @@
  		}
  		if($(window).scrollTop()>970){
  			if(donu==false){
+ 				$("section.quanaonu .text h1").css({
+ 					"opacity": '1',
+ 					
+ 				});
+ 				$("section.quanaonu .text a").css({
+ 					"opacity": '1',
+ 				});
 				gsap.from("section.quanaonu .text h1",1,{x:-300,opacity:0})
  				gsap.from("section.quanaonu .text a",1,{x:-300,opacity:0})
  				gsap.to("section.quanaonu .anh div#carousel-example-generic",1,{opacity:1})
@@ -31,6 +46,13 @@
  		}
  		if($(window).scrollTop()>1680){
  			if(dotreem==false){
+ 				$("section.quanaotreem .text h1").css({
+ 					"opacity": '1',
+ 					
+ 				});
+ 				$("section.quanaotreem .text a").css({
+ 					"opacity": '1',
+ 				});
 				gsap.from("section.quanaotreem .text h1",1,{x:300,opacity:0})
  				gsap.from("section.quanaotreem .text a",1,{x:300,opacity:0})
  				gsap.to("section.quanaotreem .anh div#carousel-example-generic",1,{opacity:1})

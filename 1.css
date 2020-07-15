@@ -193,6 +193,7 @@ section.quanaonam .text a, section.quanaonu .text a,section.quanaotreem .text a 
     margin: auto;
     text-transform: uppercase;
     transition: 0.8s;
+    opacity: 0;
 }
 
 section.quanaonam .text a:before, section.quanaonu .text a:before, section.quanaotreem .text a:before {
@@ -364,7 +365,7 @@ section.quanaonam .text, section.quanaonu .text,section.quanaotreem .text {
     padding-bottom: 75px;
 }
 
-section.quanaonam .text h1, section.quanaonu .text h1,section.quanaotreem .text h1 {font-family: "fontcollection";text-align: center;padding-top: 130px;margin-bottom: 36px;}
+section.quanaonam .text h1, section.quanaonu .text h1,section.quanaotreem .text h1 {font-family: "fontcollection";text-align: center;padding-top: 130px;margin-bottom: 36px;opacity: 0;}
 
 section.quanaonam, section.quanaotreem {
     background: #efefef69;
@@ -517,6 +518,11 @@ header .menutop .menu .icons .thesearch i {
 header .menutop .menu .icons .thesearch:hover i {}
 @media (max-width: 991px){
 	*{}
+
+section.quanaonam .text h1, section.quanaonu .text h1, section.quanaotreem .text h1 {
+    font-size: 68px;
+    padding-top: 160px;
+}
 
 header .menutop .menu .icons .thesearch:hover {
     background: white;
