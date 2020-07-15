@@ -37,18 +37,19 @@
 
 .signin .row .text button {
     padding: 11px 29px;
-    border-color: black;
+    /* border-color: black; */
     color: black;
     text-transform: uppercase;
     border-radius: 0;
     border: none;
-    transition: 0.5s;
+    transition: 0.3s;
     position: relative;
 }
 
 .signin .row .text button:hover:before,.signin .row .text button:hover:after {
     width: 100%;
     height: 100%;
+    /* transition-delay: 0.4s; */
 }
 
 .signin .row .text button:before {content: "";position: absolute;left: 0;top: 0;width: 10px;height: 10px;border-left: 2px solid black;transition: 0.3s;border-top: 2px solid black;}
@@ -67,7 +68,9 @@
 
 .signin .row .text button:hover {
     background: black;
+    padding: 11px 84px;
     color: white;
+    /* transition-delay: 0.6s; */
 }
 
 .signin .row .text h1 {
@@ -82,7 +85,7 @@
     margin: auto;
     border-radius: 17px;
     transition: 0.4s;
-    box-shadow: 4px 7px 11px #c5c5c5;
+    box-shadow: 8px 8px 9px 0px #c5c5c594;
     min-width: 120px;
 }
 
@@ -103,6 +106,11 @@
 
 .signin .row .text a {
     text-decoration: none;
+    font-size: 13px;
+}
+
+.signin .row .text p {
+    font-size: 13px;
 }
 
 .signin {
@@ -154,16 +162,18 @@
 }
 
 .signin .row .anh img {
-    max-height: 100%;
-    /* width: auto; */
-    width: 100%;
-    height: 80vh;
+    /* max-height: 100%; */
+    width: auto;
+    /* width: 100%; */
+    height: 100%;
+    /* height: 80vh; */
     /* transform: translateX(0px); */
     /* transform: translateX(10px); */
     /* left: 0px; */
+    margin-left: calc(0px - 9vh - 3vw);
     padding-left: 1px;
-    min-height: 520.8px;
-    min-width: 352.53px;
+    min-height: 608px;
+    min-width: 551.13px;
 }
 
 
@@ -243,11 +253,13 @@ section.quanaonam .anh div#carousel-example-generic img, section.quanaonu .anh d
 section.quanaonam .anh div#carousel-example-generic {
     width: 100%;
     height: 100%;
+    opacity: 0;
 }
 
 section.quanaonu .anh div#carousel-example-generic,section.quanaotreem .anh div#carousel-example-generic {
     width: 100%;
     height: 100%;
+    opacity: 0;
 }
 
 .thanhslide div#carousel-example-generic .carousel-inner {
