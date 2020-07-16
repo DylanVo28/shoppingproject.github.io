@@ -1,0 +1,425 @@
+*{margin: 0;padding: 0}
+html,body {
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.signin .row .text {
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.signin .row .text .dangnhap,.signin .row .text .dangky {
+    position: absolute;
+    left: 50%;
+    margin-left: -20vw;
+    width: 40vw;
+    /* min-width: 400px; */
+    opacity: 0;
+    visibility: hidden;
+}
+
+.signin .row .text .dangnhap {
+    opacity: 1;
+    visibility: visible;
+}
+
+.signin .row .text .dangky {
+    /* opacity: 1; */
+    /* visibility: visible; */
+}
+
+.signin .row .text .dangky {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.signin .row .text form {
+    margin-bottom: 20px;
+}
+
+.signin .row .text button {
+    padding: 11px 29px;
+    /* border-color: black; */
+    color: black;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: none;
+    transition: 0.3s;
+    position: relative;
+}
+
+.signin .row .text button:hover:before,.signin .row .text button:hover:after {
+    width: 100%;
+    height: 100%;
+    /* transition-delay: 0.4s; */
+}
+
+.signin .row .text button:before {content: "";position: absolute;left: 0;top: 0;width: 10px;height: 10px;border-left: 2px solid black;transition: 0.3s;border-top: 2px solid black;}
+
+.signin .row .text button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transition: 0.3s;
+}
+
+.signin .row .text button:hover {
+    background: black;
+    padding: 11px 84px;
+    color: white;
+    /* transition-delay: 0.6s; */
+}
+
+.signin .row .text h1 {
+    padding-top: calc(35vh - 160px);
+    margin-bottom: 30px;
+}
+
+.signin .row .text .form-control {
+    width: 40%;
+    border-color: white;
+    text-align: center;
+    margin: auto;
+    border-radius: 17px;
+    transition: 0.4s;
+    box-shadow: 8px 8px 9px 0px #c5c5c594;
+    min-width: 120px;
+}
+
+.signin .row .text .form-check-input {
+    /* margin: 0; */
+    /* width: 13px; */
+    /* margin: auto; */
+    /* background: white; */
+    /* border: none; */
+    /* box-sizing: unset; */
+}
+
+.signin .row .text .form-control:focus {
+    width: 60%;
+    border-color: white;
+    min-width: 200px;
+}
+
+.signin .row .text a {
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.signin .row .text p {
+    font-size: 13px;
+}
+
+.signin {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #ffffffab;
+    /* z-index: 30; */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.signin i {
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    font-size: 28px;
+    filter: blur(1px);
+    cursor: pointer;
+    /* box-shadow: 1px 1px 1px black; */
+    color: #717171;
+    transition: 0.4s;
+}
+
+.signin i:hover {
+    color: black;
+    filter: none;
+}
+
+.signin .row {
+    width: 80vw;
+    height: 80vh;
+    left: 10%;
+    top: 10%;
+    position: fixed;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    /* z-index: 99; */
+    overflow: hidden;
+    box-shadow: 3px 5px 9px 3px #5f5f5f;
+}
+
+.signin .row .anh {
+    height: 100%;
+    /* background: yellow; */
+    padding: 0;
+    overflow: hidden;
+}
+
+.signin .row .anh img {
+    /* max-height: 100%; */
+    width: auto;
+    /* width: 100%; */
+    height: 100%;
+    /* height: 80vh; */
+    /* transform: translateX(0px); */
+    /* transform: translateX(10px); */
+    /* left: 0px; */
+    margin-left: calc(0px - 9vh - 3vw);
+    padding-left: 1px;
+    min-height: 608px;
+    min-width: 551.13px;
+}
+header .menutop .menu .navbar ul li {
+    margin: 0;
+    
+}
+
+header .menutop .menu .navbar ul {
+    position: relative;
+    z-index: 0;
+}
+
+
+
+header .menutop .menu .navbar ul .themove {
+    position: absolute;
+    width: 116px;
+    height: 53px;
+    background: black;
+    z-index: -99;
+    transition: 0.4s;
+}
+
+header .menutop .menu .navbar {
+    padding: 0;
+    height: 100%;
+   
+    background: none;
+}
+
+
+
+
+header .menutop .menu .navbar ul li a {
+    text-transform: uppercase;
+    color: black;
+    padding: 22px 18px;
+    font-size: 17px;
+    padding-bottom: 6px;
+}
+
+header .menutop .menu .navbar ul li:nth-child(1) a {
+    color: white;
+}
+
+header .menutop .menu .navbar ul li:nth-child(1) a {
+    color: white!important;
+    z-index: 9;
+}
+header {
+    width: 100%;
+}
+
+header .thanhden {
+    width: 100%;
+    height: 25px;
+    background: black;
+}
+
+header .thanhden ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+}
+
+header .thanhden ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+header .thanhden ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+header .menutop {
+    width: 100%;
+    background: none;
+    height: 140px;
+}
+
+header .menutop .logo {
+    height: 87px;
+    background: none;
+    vertical-align: middle;
+}
+
+header .menutop .logo h1 {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    margin-top: 21.5px;
+}
+
+header .menutop .menu {
+    height: 53px;
+}
+
+header .menutop .menu .icons {
+    float: right;
+}
+
+header .menutop .menu .icons .thesearch {
+    float: left;
+    background: none;
+    border: 1px solid black;
+    border-color: #ffffff00;
+    border-radius: 34px;
+    overflow: hidden;
+    transition: 0.4s;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+header .menutop .menu .icons .thesearch input {
+    border: none;
+    
+    transform: translateY(-5px);
+  
+    width: 0;
+    transition: 0.4s;
+   
+    text-align: center;
+}
+
+header .menutop .menu .icons .thesearch:hover input {
+    width: 160px;
+}
+
+header .menutop .menu .icons .thesearch:hover {border-color: #adacac;}
+
+header .menutop .menu .icons .thebag {
+    float: left;
+    position: relative;
+}
+
+header .menutop .menu .icons .thebag::before {content: "0";position: absolute;left: 43%;top: 41%;color: #00BCD4;font-weight: 600;}
+
+header .menutop .menu .icons .thebag i {
+    padding: 14px 15px;
+  
+    padding-bottom: 6px;
+    font-size: 30px;
+    color: #656d73;
+}
+
+header .menutop .menu .icons .thesearch i {
+    font-size: 30px;
+    padding: 8px 10px;
+    color: #656d73;
+    padding-bottom: 6px;
+}
+
+header .menutop .menu .icons .thesearch:hover i {}
+@media (max-width: 991px){
+	*{}
+	header .menutop .menu .icons .thesearch:hover {
+    background: white;
+}
+
+header .menutop .menu .navbar ul .themove {
+    opacity: 0;
+    visibility: hidden;
+}
+
+header .menutop .menu .navbar {
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+header .menutop .menu .navbar ul {
+   
+}
+
+header .menutop .menu .navbar button {
+    color: black;
+    border: none;
+}
+
+header .menutop .menu .navbar ul li a {
+    color: white!important;
+    text-align: right;
+  
+}
+
+header .menutop .menu .navbar div#exCollapsingNavbar2 {
+    background: black;
+    margin-top: -1px;
+    padding-top: 24px;
+    width: 100%;
+}
+
+header .menutop .logo h1 {}
+
+header .menutop .logo h1 {
+    margin-top: 4.5px;
+}
+
+header .menutop .logo {
+    height: 53px;
+}
+
+header .menutop {
+    height: auto;
+}
+}
+@media (max-width: 767px){
+	*{}
+	header .menutop .menu {
+    padding-right: 0;
+}
+}
+@media (max-width: 575px){
+	*{}
+	.signin .row .text h1 {
+    padding-top: calc(30vh - 160px);
+}
+
+.signin .row .text .dangnhap,.signin .row .text .dangky {
+    min-width: 307px;
+    margin-left: -154px;
+}
+
+.signin .row .text .form-control:focus {
+    /* padding-right: 27px; */
+    /* width: 200px; */
+    /* margin-right: 27px; */
+}
+
+.signin .row {
+    flex-direction: column;
+    width: 86vw;
+}
+
+.signin .row .text {
+    height: 80vh;
+    position: absolute;
+}
+
+.signin .row .anh {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}
+}

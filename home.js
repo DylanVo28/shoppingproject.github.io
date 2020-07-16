@@ -1,11 +1,13 @@
 ﻿ $(function(){
  	var vitri=$("header .menutop .menu .navbar ul li:nth-child(2)").position().left+"px";
+ 	
  	var kt=true;
  	var chieurong;
  	var ngonngu=false;
  	var donam=false;
  	var donu=false;
  	var dotreem=false;
+ 	
  	gsap.from("section.thanhslide",3,{opacity:0})
  	
  	$(window).scroll(function(event) {
