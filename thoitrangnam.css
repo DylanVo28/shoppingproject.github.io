@@ -1,4 +1,52 @@
 *{margin: 0;padding: 0}
+
+section.viewspnam .danhmuc ul {
+    list-style: none;
+    margin-top: 44px;
+}
+
+section.viewspnam .danhmuc ul li {
+    text-transform: uppercase;
+    padding: 15px 0;
+    cursor: pointer;
+    cursor: pointer;
+    /* display: inline-block; */
+}
+
+section.viewspnam .sanpham .sp {
+    height: 400px;
+    background: green;
+}
+
+section.viewspnam .sanpham {
+    /* height: 500px; */
+    /* background: white; */
+}
+
+section.viewspnam .sanpham .loc {
+    height: 44px;
+    background: blue;
+}
+
+
+
+section.viewspnam .sanpham {
+    height: auto;
+    background: orange;
+}
+
+section.viewspnam .danhmuc {
+    height: 1000px;
+    /* background: black; */
+}
+
+section.viewspnam {
+    width: 100%;
+}
+
+
+
+
 html,body {
     width: 100%;
     font-family: 'Roboto Condensed', sans-serif;
@@ -392,6 +440,12 @@ header .menutop {
 }
 @media (max-width: 575px){
 	*{}
+
+section.viewspnam .danhmuc {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
 	.signin .row .text h1 {
     padding-top: calc(30vh - 160px);
 }
