@@ -2,7 +2,7 @@ $(function() {
 	var vitri=$("header .menutop .menu .navbar ul li:nth-child(3)").position().left-18.9995+"px";
 	var chieurong;
 	var ngonngu=false;
-	$("header .thanhden ul li:nth-child(1) a").click(function(event) {
+	$("header .topbar ul li:nth-child(1) a").click(function(event) {
  		if(ngonngu==false){
  			$(this).html("Tiếng Việt");
  			ngonngu=true;
@@ -13,7 +13,7 @@ $(function() {
  		}
  		
  	});
- 	$("header .thanhden ul li:nth-child(2) a").click(function(event) {
+ 	$("header .topbar ul li:nth-child(2) a").click(function(event) {
  		$(".signin").css({
  			"opacity": '1',
  			"visibility": 'visible',
@@ -36,12 +36,12 @@ $(function() {
  			400, function() {
  			
  		});
- 		$(".signin .row .text .dangky").css({
+ 		$(".signin .row .text .register").css({
  			"left": '100%',
  			"opacity":"1",
  			"visibility":"visible",
  		});
- 		$(".signin .row .text .dangky").animate({
+ 		$(".signin .row .text .register").animate({
  			left: "50%",
  			},
  			400, function() {
@@ -49,8 +49,8 @@ $(function() {
  		});
 
  	});
- 	$(".signin .row .text a.formdangnhap").click(function(event) {
- 		$(".signin .row .text .dangky").animate({
+ 	$(".signin .row .text a.formsignin").click(function(event) {
+ 		$(".signin .row .text .register").animate({
  			left: "-50%",
  			opacity: "0",
  			visibility :"visible",
@@ -71,7 +71,7 @@ $(function() {
  		});
 
  	});
-	$("header .menutop .menu .navbar ul .themove").css({
+	$("header .menutop .menu .navbar ul .tagmove").css({
  			"left": vitri,
  			"width": "158.72px",
  	});
@@ -82,7 +82,7 @@ $(function() {
  	$("header .menutop .menu .navbar ul li").hover(function() {
  		vitri=$(this).position().left+"px";
  		chieurong=$(this).width()+"px";
- 		$("header .menutop .menu .navbar ul .themove").css({
+ 		$("header .menutop .menu .navbar ul .tagmove").css({
  			"left": vitri,
  			"width": chieurong,
  		});
@@ -95,7 +95,7 @@ $(function() {
  		
  		});
  	}, function() {
- 		$("header .menutop .menu .navbar ul .themove").css({
+ 		$("header .menutop .menu .navbar ul .tagmove").css({
  			"left": $("header .menutop .menu .navbar ul li:nth-child(3)").position().left+"px",
  			"width": $("header .menutop .menu .navbar ul li:nth-child(3)").width()+"px",
  		});

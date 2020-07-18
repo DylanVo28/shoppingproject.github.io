@@ -8,7 +8,7 @@
  	var donu=false;
  	var dotreem=false;
  	
- 	gsap.from("section.thanhslide",3,{opacity:0})
+ 	gsap.from("section.slides",3,{opacity:0})
  	
  	$(window).scroll(function(event) {
 		console.log($(window).scrollTop());
@@ -16,34 +16,34 @@
 			donam=false;
 			donu=false;
 			dotreem=false;
-			$("section.quanaonam .anh div#carousel-example-generic").css({
+			$("section.men .pic div#carousel-example-generic").css({
 				"opacity": '0',
 			});
-			$("section.quanaonu .anh div#carousel-example-generic").css({
+			$("section.women .pic div#carousel-example-generic").css({
 				"opacity": '0',
 			});
-			$("section.quanaotreem .anh div#carousel-example-generic").css({
+			$("section.kid .pic div#carousel-example-generic").css({
 				"opacity": '0',
 			});
-			$("section.quanaonam .text h1").css({
+			$("section.men .text h1").css({
  					"opacity": '0',
  					
  			});
- 			$("section.quanaonam .text a").css({
+ 			$("section.men .text a").css({
  				"opacity": '0',
  			});
- 			$("section.quanaonu .text h1").css({
+ 			$("section.women .text h1").css({
  					"opacity": '0',
  					
  			});
- 			$("section.quanaonu .text a").css({
+ 			$("section.women .text a").css({
  				"opacity": '0',
  			});
- 			$("section.quanaotreem .text h1").css({
+ 			$("section.kid .text h1").css({
  					"opacity": '0',
  					
  			});
- 			$("section.quanaotreem .text a").css({
+ 			$("section.kid .text a").css({
  				"opacity": '0',
  			});
  			
@@ -51,17 +51,17 @@
  		if($(window).scrollTop()>270){
  			
  			if(donam==false){
- 				$("section.quanaonam .text h1").css({
+ 				$("section.men .text h1").css({
  					"opacity": '1',
  					
  				});
- 				$("section.quanaonam .text a").css({
+ 				$("section.men .text a").css({
  					"opacity": '1',
  					
  				});
- 				gsap.from("section.quanaonam .text h1",1,{x:300,opacity:0})
- 				gsap.from("section.quanaonam .text a",0.6,{x:300,opacity:0})
- 				gsap.to("section.quanaonam .anh div#carousel-example-generic",1,{opacity:1})
+ 				gsap.from("section.men .text h1",1,{x:300,opacity:0})
+ 				gsap.from("section.men .text a",0.6,{x:300,opacity:0})
+ 				gsap.to("section.men .pic div#carousel-example-generic",1,{opacity:1})
  				donam=true;
  			}
 			
@@ -69,36 +69,36 @@
  		}
  		if($(window).scrollTop()>970){
  			if(donu==false){
- 				$("section.quanaonu .text h1").css({
+ 				$("section.women .text h1").css({
  					"opacity": '1',
  					
  				});
- 				$("section.quanaonu .text a").css({
+ 				$("section.women .text a").css({
  					"opacity": '1',
  				});
-				gsap.from("section.quanaonu .text h1",1,{x:-300,opacity:0})
- 				gsap.from("section.quanaonu .text a",0.6,{x:-300,opacity:0})
- 				gsap.to("section.quanaonu .anh div#carousel-example-generic",1,{opacity:1})
+				gsap.from("section.women .text h1",1,{x:-300,opacity:0})
+ 				gsap.from("section.women .text a",0.6,{x:-300,opacity:0})
+ 				gsap.to("section.women .pic div#carousel-example-generic",1,{opacity:1})
  				donu=true;
 			}
  		}
  		if($(window).scrollTop()>1680){
  			if(dotreem==false){
- 				$("section.quanaotreem .text h1").css({
+ 				$("section.kid .text h1").css({
  					"opacity": '1',
  					
  				});
- 				$("section.quanaotreem .text a").css({
+ 				$("section.kid .text a").css({
  					"opacity": '1',
  				});
-				gsap.from("section.quanaotreem .text h1",1,{x:300,opacity:0})
- 				gsap.from("section.quanaotreem .text a",0.6,{x:300,opacity:0})
- 				gsap.to("section.quanaotreem .anh div#carousel-example-generic",1,{opacity:1})
+				gsap.from("section.kid .text h1",1,{x:300,opacity:0})
+ 				gsap.from("section.kid .text a",0.6,{x:300,opacity:0})
+ 				gsap.to("section.kid .pic div#carousel-example-generic",1,{opacity:1})
  				dotreem=true;
 			}
  		}
  	});
- 	$("header .menutop .menu .navbar ul .themove").css({
+ 	$("header .menutop .menu .navbar ul .tagmove").css({
  			"left": vitri,
  			"width": "117.86px",
  	});
@@ -109,7 +109,7 @@
  	$("header .menutop .menu .navbar ul li").hover(function() {
  		vitri=$(this).position().left+"px";
  		chieurong=$(this).width()+"px";
- 		$("header .menutop .menu .navbar ul .themove").css({
+ 		$("header .menutop .menu .navbar ul .tagmove").css({
  			"left": vitri,
  			"width": chieurong,
  		});
@@ -122,7 +122,7 @@
  		
  		});
  	}, function() {
- 		$("header .menutop .menu .navbar ul .themove").css({
+ 		$("header .menutop .menu .navbar ul .tagmove").css({
  			"left": $("header .menutop .menu .navbar ul li:nth-child(2)").position().left+"px",
  			"width": $("header .menutop .menu .navbar ul li:nth-child(2)").width()+"px",
  		});
@@ -153,14 +153,14 @@
  		}
  		
  	});
- 	$("header .thanhden ul li:nth-child(2) a").click(function(event) {
+ 	$("header .topbar ul li:nth-child(2) a").click(function(event) {
  		$(".signin").css({
  			"opacity": '1',
  			"visibility": 'visible',
  			"z-index":"30",
  		});
  	});
- 	$("header .thanhden ul li:nth-child(1) a").click(function(event) {
+ 	$("header .topbar ul li:nth-child(1) a").click(function(event) {
  		if(ngonngu==false){
  			$(this).html("Tiếng Việt");
  			ngonngu=true;
@@ -178,8 +178,8 @@
  			"z-index":"0",
  		});
  	});
- 	$(".signin .row .text a.formdangky").click(function(event) {
- 		$(".signin .row .text .dangnhap").animate({
+ 	$(".signin .row .text a.formregister").click(function(event) {
+ 		$(".signin .row .text .login").animate({
  			left: "-50%",
  			opacity: "0",
  			visibility :"visible",
@@ -187,12 +187,12 @@
  			400, function() {
  			
  		});
- 		$(".signin .row .text .dangky").css({
+ 		$(".signin .row .text .register").css({
  			"left": '100%',
  			"opacity":"1",
  			"visibility":"visible",
  		});
- 		$(".signin .row .text .dangky").animate({
+ 		$(".signin .row .text .register").animate({
  			left: "50%",
  			},
  			400, function() {
@@ -200,8 +200,8 @@
  		});
 
  	});
- 	$(".signin .row .text a.formdangnhap").click(function(event) {
- 		$(".signin .row .text .dangky").animate({
+ 	$(".signin .row .text a.formsignin").click(function(event) {
+ 		$(".signin .row .text .register").animate({
  			left: "-50%",
  			opacity: "0",
  			visibility :"visible",
@@ -209,12 +209,12 @@
  			400, function() {
  			
  		});
- 		$(".signin .row .text .dangnhap").css({
+ 		$(".signin .row .text .login").css({
  			"left": '100%',
  			"opacity":"1",
  			"visibility":"visible",
  		});
- 		$(".signin .row .text .dangnhap").animate({
+ 		$(".signin .row .text .login").animate({
  			left: "50%",
  			},
  			400, function() {

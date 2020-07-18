@@ -1,46 +1,64 @@
 *{margin: 0;padding: 0}
 
-section.viewspnam .danhmuc ul {
+section.viewproducts .danhmuc ul {
     list-style: none;
     margin-top: 44px;
 }
 
-section.viewspnam .danhmuc ul li {
+section.viewproducts .danhmuc ul li {
     text-transform: uppercase;
     padding: 15px 0;
     cursor: pointer;
     cursor: pointer;
     /* display: inline-block; */
+    border-bottom: 1px solid gray;
 }
 
-section.viewspnam .sanpham .sp {
+section.viewproducts .sanpham .sp {
     height: 400px;
     background: green;
 }
 
-section.viewspnam .sanpham {
+section.viewproducts .sanpham {
     /* height: 500px; */
     /* background: white; */
 }
 
-section.viewspnam .sanpham .loc {
+section.viewproducts .sanpham .loc {
     height: 44px;
-    background: blue;
+    /* background: blue; */
+}
+
+section.viewproducts .sanpham .loc ul {
+    list-style: none;
+}
+
+section.viewproducts .sanpham .loc ul li {
+    float: left;
+    margin: 0px 1vw;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section.viewproducts .sanpham .loc p {
+    display: inline-block;
+    float: left;
+    /* text-transform: uppercase; */
 }
 
 
 
-section.viewspnam .sanpham {
+section.viewproducts .sanpham {
     height: auto;
-    background: orange;
+    /* background: orange; */
 }
 
-section.viewspnam .danhmuc {
+section.viewproducts .danhmuc {
     height: 1000px;
     /* background: black; */
 }
 
-section.viewspnam {
+section.viewproducts {
     width: 100%;
 }
 
@@ -57,7 +75,7 @@ html,body {
     overflow: hidden;
 }
 
-.signin .row .text .dangnhap,.signin .row .text .dangky {
+.signin .row .text .dangnhap,.signin .row .text .register {
     position: absolute;
     left: 50%;
     margin-left: -20vw;
@@ -72,12 +90,12 @@ html,body {
     visibility: visible;
 }
 
-.signin .row .text .dangky {
+.signin .row .text .register {
     /* opacity: 1; */
     /* visibility: visible; */
 }
 
-.signin .row .text .dangky {
+.signin .row .text .register {
     opacity: 0;
     visibility: hidden;
 }
@@ -205,14 +223,14 @@ html,body {
     box-shadow: 3px 5px 9px 3px #5f5f5f;
 }
 
-.signin .row .anh {
+.signin .row .pic {
     height: 100%;
     /* background: yellow; */
     padding: 0;
     overflow: hidden;
 }
 
-.signin .row .anh img {
+.signin .row .pic img {
     /* max-height: 100%; */
     width: auto;
     /* width: 100%; */
@@ -238,7 +256,7 @@ header .menutop .menu .navbar ul {
 
 
 
-header .menutop .menu .navbar ul .themove {
+header .menutop .menu .navbar ul .tagmove {
     position: absolute;
     width: 116px;
     height: 53px;
@@ -277,25 +295,25 @@ header {
     width: 100%;
 }
 
-header .thanhden {
+header .topbar {
     width: 100%;
     height: 25px;
     background: black;
 }
 
-header .thanhden ul {
+header .topbar ul {
     list-style: none;
     float: right;
     margin: 0;
 }
 
-header .thanhden ul li a {
+header .topbar ul li a {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
 }
 
-header .thanhden ul li {
+header .topbar ul li {
     float: left;
     margin: 0 10px;
 }
@@ -380,12 +398,12 @@ header .menutop .menu .icons .thesearch i {
 
 header .menutop .menu .icons .thesearch:hover i {}
 @media (max-width: 991px){
-	*{}
-	header .menutop .menu .icons .thesearch:hover {
+    *{}
+    header .menutop .menu .icons .thesearch:hover {
     background: white;
 }
 
-header .menutop .menu .navbar ul .themove {
+header .menutop .menu .navbar ul .tagmove {
     opacity: 0;
     visibility: hidden;
 }
@@ -403,6 +421,10 @@ header .menutop .menu .navbar ul {
 header .menutop .menu .navbar button {
     color: black;
     border: none;
+}
+
+header .menutop .menu .navbar button:focus {
+    color: white;
 }
 
 header .menutop .menu .navbar ul li a {
@@ -433,24 +455,46 @@ header .menutop {
 }
 }
 @media (max-width: 767px){
-	*{}
-	header .menutop .menu {
+    *{}
+
+section.viewproducts .sanpham .loc p {
+    font-size: 13px;
+}
+
+section.viewproducts .sanpham .loc {
+    padding: 0;
+}
+
+section.viewproducts .sanpham {
+    /* padding: 0; */
+}
+
+section.viewproducts .sanpham .loc ul li {
+    font-size: 12px;
+}
+    header .menutop .menu {
     padding-right: 0;
 }
 }
 @media (max-width: 575px){
-	*{}
+    *{}
 
-section.viewspnam .danhmuc {
+section.viewproducts .sanpham .loc p {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+}
+
+section.viewproducts .danhmuc {
     height: 0;
     opacity: 0;
     visibility: hidden;
 }
-	.signin .row .text h1 {
+    .signin .row .text h1 {
     padding-top: calc(30vh - 160px);
 }
 
-.signin .row .text .dangnhap,.signin .row .text .dangky {
+.signin .row .text .dangnhap,.signin .row .text .register {
     min-width: 307px;
     margin-left: -154px;
 }
@@ -471,7 +515,7 @@ section.viewspnam .danhmuc {
     position: absolute;
 }
 
-.signin .row .anh {
+.signin .row .pic {
     opacity: 0;
     visibility: hidden;
     height: 0;

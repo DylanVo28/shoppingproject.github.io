@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 
-.signin .row .text .dangnhap,.signin .row .text .dangky {
+.signin .row .text .login,.signin .row .text .register {
     position: absolute;
     left: 50%;
     margin-left: -20vw;
@@ -16,17 +16,17 @@
     visibility: hidden;
 }
 
-.signin .row .text .dangnhap {
+.signin .row .text .login {
     opacity: 1;
     visibility: visible;
 }
 
-.signin .row .text .dangky {
+.signin .row .text .register {
     /* opacity: 1; */
     /* visibility: visible; */
 }
 
-.signin .row .text .dangky {
+.signin .row .text .register {
     opacity: 0;
     visibility: hidden;
 }
@@ -154,14 +154,14 @@
     box-shadow: 3px 5px 9px 3px #5f5f5f;
 }
 
-.signin .row .anh {
+.signin .row .pic {
     height: 100%;
     /* background: yellow; */
     padding: 0;
     overflow: hidden;
 }
 
-.signin .row .anh img {
+.signin .row .pic img {
     /* max-height: 100%; */
     width: auto;
     /* width: 100%; */
@@ -178,11 +178,11 @@
 
 
 
-section.quanaonu .row {
+section.women .row {
     /* flex-direction: row-reverse; */
 }
 
-section.quanaonam .text a, section.quanaonu .text a,section.quanaotreem .text a {
+section.men .text a, section.women .text a,section.kid .text a {
     /* border-color: black; */
     color: black;
     border-radius: 0px;
@@ -196,7 +196,7 @@ section.quanaonam .text a, section.quanaonu .text a,section.quanaotreem .text a 
     opacity: 0;
 }
 
-section.quanaonam .text a:before, section.quanaonu .text a:before, section.quanaotreem .text a:before {
+section.men .text a:before, section.women .text a:before, section.kid .text a:before {
     position: absolute;
     content: "";
     width: 10px;
@@ -208,14 +208,14 @@ section.quanaonam .text a:before, section.quanaonu .text a:before, section.quana
     transition: 0.4s;
 }
 
-section.quanaonam .text a:hover:before, section.quanaonu .text a:hover:before, section.quanaotreem .text a:hover:before,section.quanaonam .text a:hover:after, section.quanaonu .text a:hover:after, section.quanaotreem .text a:hover:after {
+section.men .text a:hover:before, section.women .text a:hover:before, section.kid .text a:hover:before,section.men .text a:hover:after, section.women .text a:hover:after, section.kid .text a:hover:after {
     width: 100%;
     height: 100%;
 }
 
-section.quanaonam .text a:hover:after, section.quanaonu .text a:hover:after, section.quanaotreem .text a:hover:after {}
+section.men .text a:hover:after, section.women .text a:hover:after, section.kid .text a:hover:after {}
 
-section.quanaonam .text a:after, section.quanaonu .text a:after, section.quanaotreem .text a:after {
+section.men .text a:after, section.women .text a:after, section.kid .text a:after {
     position: absolute;
     content: "";
     width: 10px;
@@ -227,7 +227,7 @@ section.quanaonam .text a:after, section.quanaonu .text a:after, section.quanaot
     transition: 0.4s;
 }
 
-section.quanaonam .text a:hover, section.quanaonu .text a:hover, section.quanaotreem .text a:hover {
+section.men .text a:hover, section.women .text a:hover, section.kid .text a:hover {
     color: white;
     background: black;
 }
@@ -235,58 +235,58 @@ section.quanaonam .text a:hover, section.quanaonu .text a:hover, section.quanaot
 	font-family: "fontcollection";
 	src:url("fonts/fontcollection/FracturaND/FracturaND.ttf");
 }
-section.quanaonam .anh div#carousel-example-generic .carousel-item.active {
+section.men .pic div#carousel-example-generic .carousel-item.active {
     height: 100%;
 }
 
-section.quanaonam .anh div#carousel-example-generic .carousel-inner, section.quanaonu .anh div#carousel-example-generic .carousel-inner,section.quanaotreem .anh div#carousel-example-generic .carousel-inner {
+section.men .pic div#carousel-example-generic .carousel-inner, section.women .pic div#carousel-example-generic .carousel-inner,section.kid .pic div#carousel-example-generic .carousel-inner {
     height: 100%;
 }
 
-section.quanaonu .anh div#carousel-example-generic .carousel-inner {}
+section.women .pic div#carousel-example-generic .carousel-inner {}
 
-section.quanaonam .anh div#carousel-example-generic img, section.quanaonu .anh div#carousel-example-generic img,section.quanaotreem .anh div#carousel-example-generic img {
+section.men .pic div#carousel-example-generic img, section.women .pic div#carousel-example-generic img,section.kid .pic div#carousel-example-generic img {
     /* height: 100%; */
     /* transform: translateY(-34px); */
     min-height: 525px;
 }
 
-section.quanaonam .anh div#carousel-example-generic {
+section.men .pic div#carousel-example-generic {
     width: 100%;
     height: 100%;
     opacity: 0;
 }
 
-section.quanaonu .anh div#carousel-example-generic,section.quanaotreem .anh div#carousel-example-generic {
+section.women .pic div#carousel-example-generic,section.kid .pic div#carousel-example-generic {
     width: 100%;
     height: 100%;
     opacity: 0;
 }
 
-.thanhslide div#carousel-example-generic .carousel-inner {
+.slides div#carousel-example-generic .carousel-inner {
     height: 100%;
 }
 
-.thanhslide div#carousel-example-generic .carousel-item {
+.slides div#carousel-example-generic .carousel-item {
     width: 100%;
     height: 100%;
 }
 
-.thanhslide div#carousel-example-generic .carousel-item img {
+.slides div#carousel-example-generic .carousel-item img {
     width: 100%;
     height: 100%;
 }
 
-.thanhslide div#carousel-example-generic {
+.slides div#carousel-example-generic {
     height: 100%;
     width: 100%;
 }
 
-.thanhslide div#carousel-example-generic a:hover {
+.slides div#carousel-example-generic a:hover {
     background: none;
 }
 
-.thanhslide div#carousel-example-generic a {
+.slides div#carousel-example-generic a {
     background: none;
 }
 
@@ -305,7 +305,7 @@ header .menutop .menu .navbar ul li:nth-child(1) a {
    
 }
 
-header .menutop .menu .navbar ul .themove {
+header .menutop .menu .navbar ul .tagmove {
     position: absolute;
     width: 116px;
     height: 53px;
@@ -349,7 +349,7 @@ header .menutop .menu .navbar ul li:nth-child(1) a {
     background: pink;
 }
 
-section.quanaonu {
+section.women {
     height: 600px;
     width: 100%;
     background: orange;
@@ -359,22 +359,22 @@ section.quanaonu {
     overflow-x: hidden;
 }
 
-section.quanaonam .text, section.quanaonu .text,section.quanaotreem .text {
+section.men .text, section.women .text,section.kid .text {
     margin-top: 75px;
     /* color: white; */
     padding-bottom: 75px;
 }
 
-section.quanaonam .text h1, section.quanaonu .text h1,section.quanaotreem .text h1 {font-family: "fontcollection";text-align: center;padding-top: 130px;margin-bottom: 36px;opacity: 0;}
+section.men .text h1, section.women .text h1,section.kid .text h1 {font-family: "fontcollection";text-align: center;padding-top: 130px;margin-bottom: 36px;opacity: 0;}
 
-section.quanaonam, section.quanaotreem {
+section.men, section.kid {
     background: #efefef69;
     height: 700px;
     width: 100%;
     overflow-x: hidden;
 }
 
-section.quanaonam .anh, section.quanaonu .anh, section.quanaotreem .anh {
+section.men .pic, section.women .pic, section.kid .pic {
     height: 550px;
     /* background: black; */
     margin-top: 75px;
@@ -383,11 +383,11 @@ section.quanaonam .anh, section.quanaonu .anh, section.quanaotreem .anh {
     /* padding: 0; */
 }
 
-section.quanaonam .anh {}
+section.men .pic {}
 
-section.quanaonam .anh {}
+section.men .pic {}
 
-section.thanhslide {
+section.slides {
     width: 100%;
     /* background: green; */
     height: 520px;
@@ -395,7 +395,7 @@ section.thanhslide {
     /* margin: auto; */
 }
 
-section.thanhslide .container {
+section.slides .container {
     height: 100%;
 }
 
@@ -408,25 +408,25 @@ header {
     width: 100%;
 }
 
-header .thanhden {
+header .topbar {
     width: 100%;
     height: 25px;
     background: black;
 }
 
-header .thanhden ul {
+header .topbar ul {
     list-style: none;
     float: right;
     margin: 0;
 }
 
-header .thanhden ul li a {
+header .topbar ul li a {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
 }
 
-header .thanhden ul li {
+header .topbar ul li {
     float: left;
     margin: 0 10px;
     /* margin-bottom: 0; */
@@ -519,7 +519,7 @@ header .menutop .menu .icons .thesearch:hover i {}
 @media (max-width: 991px){
 	*{}
 
-section.quanaonam .text h1, section.quanaonu .text h1, section.quanaotreem .text h1 {
+section.men .text h1, section.women .text h1, section.kid .text h1 {
     font-size: 68px;
     padding-top: 160px;
 }
@@ -528,7 +528,7 @@ header .menutop .menu .icons .thesearch:hover {
     background: white;
 }
 
-header .menutop .menu .navbar ul .themove {
+header .menutop .menu .navbar ul .tagmove {
     opacity: 0;
     visibility: hidden;
 }
@@ -579,16 +579,16 @@ header .menutop {
 @media (max-width: 767px){
 	*{}
 
-section.quanaonu .row {
+section.women .row {
     flex-direction: column-reverse;
 }
 
-section.quanaonam .text h1, section.quanaonu .text h1,section.quanaotreem .text h1 {
+section.men .text h1, section.women .text h1,section.kid .text h1 {
     padding: 0px;
     font-size: 90px;
 }
 
-section.quanaonam .anh div#carousel-example-generic img {
+section.men .pic div#carousel-example-generic img {
     height: auto;
 }
 
@@ -596,7 +596,7 @@ header .menutop .menu {
     padding-right: 0;
 }
 
-section.quanaonam, section.quanaonu,section.quanaotreem {
+section.men, section.women,section.kid {
     height: auto;
 }
 }
@@ -607,7 +607,7 @@ section.quanaonam, section.quanaonu,section.quanaotreem {
     padding-top: calc(30vh - 160px);
 }
 
-.signin .row .text .dangnhap,.signin .row .text .dangky {
+.signin .row .text .login,.signin .row .text .register {
     min-width: 307px;
     margin-left: -154px;
 }
@@ -628,18 +628,18 @@ section.quanaonam, section.quanaonu,section.quanaotreem {
     position: absolute;
 }
 
-.signin .row .anh {
+.signin .row .pic {
     opacity: 0;
     visibility: hidden;
     height: 0;
 }
 
-section.quanaonam .text, section.quanaonu .text,section.quanaotreem .text {
+section.men .text, section.women .text,section.kid .text {
     margin-top: 0;
     padding-bottom: 38px;
 }
 
-section.quanaonam .text h1, section.quanaonu .text h1,section.quanaotreem .text h1 {
+section.men .text h1, section.women .text h1,section.kid .text h1 {
     font-size: 15vw;
     /* margin-top: 0; */
 }
