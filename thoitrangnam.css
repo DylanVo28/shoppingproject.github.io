@@ -1,11 +1,11 @@
 *{margin: 0;padding: 0}
 
-section.viewproducts .danhmuc ul {
+section.viewproducts .listproducts ul {
     list-style: none;
     margin-top: 44px;
 }
 
-section.viewproducts .danhmuc ul li {
+section.viewproducts .listproducts ul li {
     text-transform: uppercase;
     padding: 15px 0;
     cursor: pointer;
@@ -14,33 +14,33 @@ section.viewproducts .danhmuc ul li {
     border-bottom: 1px solid gray;
 }
 
-section.viewproducts .sanpham .sp {
+section.viewproducts .products .sp {
     height: 400px;
     background: green;
 }
 
-section.viewproducts .sanpham {
+section.viewproducts .products {
     /* height: 500px; */
     /* background: white; */
 }
 
-section.viewproducts .sanpham .loc {
+section.viewproducts .products .filter {
     height: 44px;
     /* background: blue; */
 }
 
-section.viewproducts .sanpham .loc ul {
+section.viewproducts .products .filter ul {
     list-style: none;
 }
 
-section.viewproducts .sanpham .loc ul li {
+section.viewproducts .products .filter ul li {
     float: left;
     margin: 0px 1vw;
     text-transform: uppercase;
     cursor: pointer;
 }
 
-section.viewproducts .sanpham .loc p {
+section.viewproducts .products .filter p {
     display: inline-block;
     float: left;
     /* text-transform: uppercase; */
@@ -48,12 +48,12 @@ section.viewproducts .sanpham .loc p {
 
 
 
-section.viewproducts .sanpham {
+section.viewproducts .products {
     height: auto;
     /* background: orange; */
 }
 
-section.viewproducts .danhmuc {
+section.viewproducts .listproducts {
     height: 1000px;
     /* background: black; */
 }
@@ -457,19 +457,19 @@ header .menutop {
 @media (max-width: 767px){
     *{}
 
-section.viewproducts .sanpham .loc p {
+section.viewproducts .products .filter p {
     font-size: 13px;
 }
 
-section.viewproducts .sanpham .loc {
+section.viewproducts .products .filter {
     padding: 0;
 }
 
-section.viewproducts .sanpham {
+section.viewproducts .products {
     /* padding: 0; */
 }
 
-section.viewproducts .sanpham .loc ul li {
+section.viewproducts .products .filter ul li {
     font-size: 12px;
 }
     header .menutop .menu {
@@ -479,13 +479,13 @@ section.viewproducts .sanpham .loc ul li {
 @media (max-width: 575px){
     *{}
 
-section.viewproducts .sanpham .loc p {
+section.viewproducts .products .filter p {
     opacity: 0;
     visibility: hidden;
     width: 0;
 }
 
-section.viewproducts .danhmuc {
+section.viewproducts .listproducts {
     height: 0;
     opacity: 0;
     visibility: hidden;
